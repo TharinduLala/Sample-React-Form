@@ -1,0 +1,11 @@
+.customer {
+  height: 80vh;
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+@media (max-width: 426px) {
+  .customer {
+    width: 100%;
+  }
+}

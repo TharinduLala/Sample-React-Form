@@ -1,12 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
 import React from 'react';
+import styles from './App.module.css';
+import Customer from './components/Customer/Customer';
+import NavBar from './components/Header/NavBar';
 
 function App() {
   return (
-  <div>
-    
-  </div>
+  <>
+    <header className={styles.mainHeader}>
+      <NavBar/>
+    </header>
+    <main>
+      <Customer/>
+    </main>
+  </>
   );
 }
 

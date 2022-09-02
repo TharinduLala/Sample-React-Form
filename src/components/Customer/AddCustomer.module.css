@@ -1,0 +1,85 @@
+.container {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0, 26);
+  border-radius: 10px;
+  width: 100%;
+  padding: 1rem;
+}
+.container form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.control {
+  width: 40%;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.buttonGroup{
+  width: 90%;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.buttonGroup button{
+  margin: 0 1rem;
+}
+.control label,
+.control input {
+  display: block;
+}
+
+.control label {
+  font-weight: bold;
+  color: #464646;
+  margin-bottom: 0.5rem;
+}
+
+.control input,
+.control select {
+  font: inherit;
+  padding: 0.35rem 0.35rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.control input:focus {
+  outline: none;
+  border-color: #4f005f;
+  background: #f6dbfc;
+}
+.save_button{
+  background: blue;
+}
+.save_button:hover,
+.save_button:active{
+  background: darkblue;
+  border-color: darkblue;
+}
+
+.clear_button{
+  background: darkgray;
+}
+.clear_button:hover,
+.clear_button:active{
+  background: gray;
+  border-color: gray;
+}
+
+@media (max-width: 426px) {
+  .container form {
+    flex-direction: column;
+  }
+  .control {
+    width: 100%;
+  }
+  .buttonGroup{
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+}
